@@ -1,0 +1,39 @@
+body {
+  background-color: black !important;
+}
+
+.container-img {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: red;
+}
+
+.container-carousel {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: blue;
+}
+
+.container-description {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: green;
+}
+
+.container-link_tours {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: yellow;
+}
