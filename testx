@@ -6,7 +6,7 @@ Page 1: Splash Screen
 
 Page 2: Home Page
 
-- Header with logo and navigation menu (Home, Music, Contact)
+- Header with logo and navigation menu (Home, Music, Contact)✅
 - Top slider with images of the band or concerts
 - Below the slider, a modern grid with band members' photos (cards with hover animation)
 - Brief description of the band below the grid
@@ -16,7 +16,7 @@ Page 2: Home Page
 
 Page 3: Music / Discography Page
 
-- Top Section: Featured Album Slider
+- Top Section: Featured Album Slider ✅
 - Full-width carousel of latest albums or singles
 - Album cover, release date, and short description
 - Navigation arrows or swipe support on mobile
