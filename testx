@@ -1,3 +1,5 @@
+Permanent Music Player
+
 Page 1: Splash Screen
 
 - Centered band logo
@@ -17,25 +19,12 @@ Page 2: Home Page
 Page 3: Music / Discography Page
 
 - Top Section: Featured Album Slider ✅
-- Full-width carousel of latest albums or singles
-- Album cover, release date, and short description
-- Navigation arrows or swipe support on mobile
-- Section: Albums List
-- Grid layout: 3-4 albums per row (responsive to 1-2 on mobile)
 - Album card: cover image, title, release year, hover effect (shows "Listen Now" button)
-- Optional: expand to show tracklist on hover or click
-- Section: Songs
-- List or table of songs with play button
-- Filter by album or genre
-- Modern, dark table style (hover highlight, subtle shadows)
+- singles
+- Grid layout: images in shows
+- Section: album spotify
 - Section: Music Videos
-- Embedded YouTube or Vimeo videos
-- Grid of video thumbnails with title overlay
-- Hover effect: slightly zoom in + dark overlay
 - Permanent Music Player
-- Bottom of the page, fixed
-- Compact design with play/pause, next, previous, volume
-- Album art small thumbnail visible
 
 Page 4: Tours Page
 
@@ -44,6 +33,7 @@ Page 4: Tours Page
 - Map and links to buy tickets
 - Footer consistent with other pages
 - Permanent music player
+  -maps where they have been presented
 
 page 5 Contact
 
