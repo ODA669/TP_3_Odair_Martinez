@@ -18,10 +18,9 @@ Page 2: Home Page
 
 Page 3: Music / Discography Page
 
-- Top Section: Featured Album Slider ✅
+- Top Section: Featured Album card ✅
 - Album card: cover image, title, release year, hover effect (shows "Listen Now" button)
 - singles
-- Grid layout: images in shows
 - Section: album spotify
 - Section: Music Videos
 - Permanent Music Player
@@ -31,6 +30,7 @@ Page 4: Tours Page
 - Contact form (Name, Email, Message)
 - Calendar or list of upcoming concerts
 - Map and links to buy tickets
+- Grid layout: images in shows
 - Footer consistent with other pages
 - Permanent music player
   -maps where they have been presented
