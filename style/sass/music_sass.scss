@@ -6,7 +6,7 @@ h1 {
     color: white;
 }
 
-/* CSS para el efecto flip 3D */
+/* section cards */
 .perspective {
     perspective: 1000px;
 }
@@ -41,7 +41,11 @@ h1 {
     box-sizing: border-box;
 }
 
-/*section singles*/
+/*section group*/
+.text-section h3{
+    color : white;
+    font-size: 40px;
+}
 .images-group {
     max-width: 1200px;
     margin-left: auto;
@@ -50,19 +54,21 @@ h1 {
     padding-right: 1rem;
     //   background-color: red;
     margin-top: 100px;
-    height: 1200px;
-span{
-    color: #d80303;
-}
+    height: 2000px;
+
+    span {
+        color: #d80303;
+    }
+
     .star-container {
-        width: 750px;
-        height: 650px;
+         width: 400px;
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 100%;
         box-shadow: 0 0 60px rgb(143, 137, 137);
- 
+
     }
 
     .star-container img {
@@ -79,8 +85,24 @@ span{
                 32% 43%,
                 2% 65%,
                 39% 65%);
-                
+
     }
 
 
+}
+
+
+/*section spotify*/
+.container-spotify {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 150px;
+    
+    h3{
+        color: white;
+       font-size: 40px;
+    }
 }
