@@ -13,7 +13,7 @@ const video = document.getElementById("bg-video");
 
 // Cuando el video carga su metadata (duración, etc.)
 video.addEventListener("loadedmetadata", () => {
-  video.currentTime = 3; // empieza en el segundo 5
+  video.currentTime = 4.5; // empieza en el segundo 5
 });
 /***********effect pour les card de  la page music ***********/
 
