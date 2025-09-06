@@ -50,9 +50,9 @@ margin-top: 110px;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: blue;
+  // background-color: blue;
   margin-top: 150px;
-  height: 900px;
+  height: 800px;
   margin-top: 120px;
 }
 /*section de text et des icons reseaux sociaux*/
@@ -62,7 +62,9 @@ margin-top: 110px;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: green;
+  // background-color: green;
+  margin-top: 200px;
+ 
   .container-text_icons{
     display: flex;
     flex-direction: row;
@@ -74,13 +76,73 @@ margin-top: 110px;
       width: 30%;
     }
   }
+ // Media query  500px y 625px
+  @media (max-width: 625px) and (min-width: 500px) {
+    .container-text_icons {
+      flex-direction: column;
+      align-items: center;
+
+      .text-reseaux,
+      .icons-reseaux {
+        width: 100%;
+        text-align: center; // opcional, centra el texto
+      }
+
+      .icons-reseaux {
+        margin-top: 1rem; // separa los iconos del texto
+      }
+    }
+  }
 }
-.container-link_tours {
+
+
+/* section shows et link */
+.container-shows {
+  display: flex;
+  flex-direction: row;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: yellow;
+  height: 600px !important; 
+  margin-top: 200px;
+
+  .show-img {
+    width: 70% !important;
+    height: 600px;
+    display: flex;               // flexbox para centrar
+    justify-content: center;     
+    align-items: center;         
+
+    img {
+      padding: 10px;
+      width: 400px;
+      height: 600px;
+      object-fit: cover;         
+    }
+  }
+
+  .show-info {
+    width: 30% !important;
+    padding: 20px;
+    background-color: #000; // fondo negro como en Tailwind
+    color: #fff;            // texto blanco
+  }
 }
+
+/*section album*/
+.container-album {
+  margin-top: 200px;
+  .img-album{
+  
+  img{
+    width: 500px;
+    height: 600px;
+  }
+}
+}
+
+
+/*section newsletter*/
 
