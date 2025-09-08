@@ -27,10 +27,21 @@
     <link rel="icon" type="image/png" href="imgs/icons/pentagram.png" />
     <script>
 
+        // Register service worker.
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("service-worker.js").then((reg) => {
+                    console.log("Service worker registered.", reg);
+                });
+            });
+        }
+
     </script>
 </head>
 
 <body>
+
+    <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installerl'application</button>
     <header>
         <!-- menu nav hamburguer -->
         <nav class="border-gray-700 bg-black dark:bg-black dark:border-gray-700">
@@ -422,7 +433,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
 
+    </script>
+    <script src="js/install.js"></script>
 </body>
 
 </html>
