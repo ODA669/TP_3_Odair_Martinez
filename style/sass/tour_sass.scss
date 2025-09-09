@@ -1,6 +1,59 @@
-body{
+body {
     background-color: black !important;
 }
-h1{
+
+h1 {
     color: white;
+}
+
+// section shows
+.shows-posters {
+    margin-top: 180px;
+}
+
+.container-shows {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 150px;
+
+    img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+// section videos shows
+.container-video_shows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 200px;
+    h3{
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+    }
+    .show-1{
+            margin-top: 150px;
+    }
+    .show-2{
+            margin-top: 50px;
+    }
+    .show-3{
+            margin-top: 50px;
+    }
+}
+// section newslette
+.container-newsletter{
+  margin-top: 200px;
 }

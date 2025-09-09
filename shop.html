@@ -7,7 +7,7 @@
 
     <title>Sætaıǝr</title>
     <link rel="icon" type="image/png" href="imgs/icons/pentagram.png" />
-    <link rel="stylesheet" href="style/css/sass.css" />
+    <link rel="stylesheet" href="style/css/shop_sass.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -64,7 +64,48 @@
         </nav>
     </header>
     <main>
-        <h1 class="text-3xl font-bold mb-8 text-center">welcome to shop</h1>
+        <!-- Sección Shop -->
+        <section class="py-12 bg-black text-white">
+            <div class="container-shop mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Shop</h2>
+
+                <div class="grid-produits grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/item1.jpg" alt="Artículo 1" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Artículo 1</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Comprar</button>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/item2.jpg" alt="Artículo 2" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Artículo 2</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Comprar</button>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/item3.jpg" alt="Artículo 3" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Artículo 3</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Comprar</button>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/item4.jpg" alt="Artículo 4" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Artículo 4</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- section newsletter -->
         <section class="container-newsletter bg-gray-900 text-white py-12 px-4">
             <div class="max-w-[800px] mx-auto text-center space-y-4">

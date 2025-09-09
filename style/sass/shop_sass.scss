@@ -4,3 +4,21 @@ body{
 h1{
     color: white;
 }
+// section produits
+.container-shop{
+      max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  h2{
+    font-size: 70px;
+  }
+  .grid-produits{
+    margin-top: 150px;
+  }
+}
+// section newslette
+.container-newsletter{
+  margin-top: 200px;
+}
