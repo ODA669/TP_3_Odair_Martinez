@@ -6,7 +6,28 @@ h1 {
   color: white;
 }
 
-/* section cards */
+/* section text */
+.container-text_groupe {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 100px;
+  height: 200px;
+}
+.container-text_groupe h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+.container-text_groupe p {
+  color: #d80303;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 90px;
+}
+
 /*section group*/
 .text-section h3 {
   color: white;
@@ -39,6 +60,41 @@ h1 {
   height: 100%;
   object-fit: cover;
   clip-path: polygon(50% 100%, 61% 65%, 98% 65%, 68% 43%, 79% 9%, 50% 30%, 21% 9%, 32% 43%, 2% 65%, 39% 65%);
+}
+
+.text-section_formation {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 150px;
+  height: 200px;
+}
+.text-section_formation h3 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+.text-section_formation p {
+  color: #d80303;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-video {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 150px;
+}
+.container-video h3 {
+  color: white;
+  font-size: 40px;
 }
 
 /*section spotify*/
