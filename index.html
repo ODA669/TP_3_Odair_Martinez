@@ -90,14 +90,9 @@
         </nav>
     </header>
     <main class="w-full min-h-screen bg-[rgb(0,0,0)] text-white">
-
         <section class="relative h-screen overflow-hidden">
-            <!-- <video id="bg-video" autoplay muted loop playsinline
-                class="absolute top-0 left-0 w-full h-full object-cover">
-                <source src="video/videoplayback.mp4" type="video/mp4">
-            </video> -->
             <video id="bg-video" autoplay muted loop playsinline
-                class="fixed top-0 left-0 w-full h-full object-cover z-0">
+                class="absolute top-0 left-0 w-full h-full object-cover">
                 <source src="video/videoplayback.mp4" type="video/mp4">
             </video>
 
@@ -221,13 +216,19 @@
         <section>
 
             <div class="container-description max-w-[1250px] mx-auto px-4 py-6 sm:py-10 text-center space-y-4">
-                <div class="container-text_icons">
-                    <p class="text-base sm:text-lg md:text-2xl lg:text-[30px] text-reseaux leading-relaxed">
-                        Plonge dans les ombres de l’abîme sonore. Suis notre obscurité sur les réseaux et sois témoin du
-                        chaos que nous laissons après chaque accord. N’aie pas peur… ose explorer l’interdit.
-                    </p>
+                <div class="container__text-icons flex flex-col items-center md:flex-row md:items-start md:space-x-4">
 
-                    <div class="icons-reseaux flex justify-center gap-1">
+                    <!-- Texto -->
+                    <div class="w-full md:flex-1">
+                        <p class="text-base sm:text-lg md:text-2xl lg:text-[30px] text-reseaux leading-relaxed">
+                            Plonge dans les ombres de l’abîme sonore. Suis notre obscurité sur les réseaux et sois
+                            témoin du
+                            chaos que nous laissons après chaque accord. N’aie pas peur… ose explorer l’interdit.
+                        </p>
+                    </div>
+
+                    <!-- Iconos -->
+                    <div class="icons-reseaux flex flex-wrap justify-center gap-1 mt-4 md:mt-0 w-full md:w-auto">
                         <a href="#"
                             class="p-1 w-8 h-8 bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125">
                             <img src="imgs/icons/iconsfacebook.png" alt="">
@@ -252,6 +253,9 @@
 
                 </div>
             </div>
+
+
+
 
         </section>
 

@@ -8,16 +8,6 @@ h1 {
 }
 
 /*section img logo*/
-.container-img {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: black;
-  margin-top: 110px;
-}
-
 /*section carousel*/
 .container-carousel {
   max-width: 1200px;
@@ -39,18 +29,23 @@ h1 {
   padding-right: 1rem;
   margin-top: 100px;
 }
-.container-description .container-text_icons {
+.container-description .container__text-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.container-description .container-text_icons .text-reseaux {
+.container-description .container__text-icons .text-reseaux {
   width: 70%;
 }
-.container-description .container-text_icons .icons-reseaux {
+.container-description .container__text-icons .icons-reseaux {
   width: 30%;
 }
 @media (max-width: 625px) and (min-width: 500px) {
+  .container-description .flex-row-md {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem; /* igual que md:space-x-4 */
+  }
   .container-description .container-text_icons {
     flex-direction: column;
     align-items: center;
