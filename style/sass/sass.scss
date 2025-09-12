@@ -40,7 +40,7 @@ h1{
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: black;
-margin-top: 110px;
+ margin-top: 110px;
 }
 
 /*section carousel*/
@@ -236,3 +236,7 @@ margin-top: 110px;
 //   margin-top: 200px;
 // }
 
+button:hover {
+  transform: scale(1.05) rotate(-1deg);
+  transition: transform 0.2s;
+}
