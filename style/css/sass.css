@@ -40,7 +40,7 @@ h1 {
 .container-description .container__text-icons .icons-reseaux {
   width: 30%;
 }
-@media (max-width: 625px) and (min-width: 500px) {
+@media (max-width: 625px) and (min-width: 400px) {
   .container-description .flex-row-md {
     flex-direction: row;
     align-items: flex-start;
