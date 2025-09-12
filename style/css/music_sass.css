@@ -13,7 +13,7 @@ h1 {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 100px;
+  margin-top: 160px;
   height: 200px;
 }
 .container-text_groupe h1 {
@@ -23,7 +23,7 @@ h1 {
 }
 .container-text_groupe p {
   color: #d80303;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin-top: 90px;
 }
@@ -40,7 +40,7 @@ h1 {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 100px;
+  margin-top: 500px;
   height: 2000px;
 }
 .images-group span {
@@ -84,6 +84,22 @@ h1 {
   margin-top: 20px;
 }
 
+.container_text h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+.container_text p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+
 .container-video {
   max-width: 1250px;
   margin-left: auto;
@@ -104,7 +120,7 @@ h1 {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 .container-spotify h3 {
   color: white;

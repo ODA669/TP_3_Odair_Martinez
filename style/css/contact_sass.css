@@ -5,3 +5,51 @@ body {
 h1 {
   color: white;
 }
+
+/***************************formulaire contact*/
+.input-control {
+  padding: 15px;
+}
+.input-control textarea {
+  resize: none;
+}
+.input-control textarea:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.input-control .error-message {
+  color: #ff3860;
+  font-size: 14px;
+  height: 13px;
+  font-weight: bold;
+}
+.input-control input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 10px;
+}
+.input-control input:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.input-control input:focus {
+  outline: 0;
+}
+.input-controlsucces input {
+  border-color: green;
+}
+.input-controlerror input {
+  border-color: red;
+}
+
+/*****section maps************************/
+.maps-form h2 {
+  margin-top: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+}
+.maps-form .formMap {
+  margin-top: 150px;
+}

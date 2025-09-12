@@ -14,7 +14,13 @@ h1 {
   padding-right: 1rem;
 }
 .container-shop h2 {
+  margin-top: 165px;
   font-size: 70px;
+}
+.container-shop h3 {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 35px;
 }
 .container-shop .grid-produits {
   margin-top: 150px;

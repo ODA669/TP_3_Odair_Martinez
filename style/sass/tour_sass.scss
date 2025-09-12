@@ -14,17 +14,37 @@ h1 {
 .container-shows {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 150px;
+    .poster{
+        margin-top: 50px;
+    }
 
     img {
         width: 400px;
-        height: 300px;
+        height: 400px;
     }
+      @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr); // 2 columnas
+       img {
+        width: 300px;
+        height: 500px;
+    }
+    }
+
+    @media (max-width: 652px) {
+      grid-template-columns: 1fr; // 1 columna
+       img {
+        width: 400px;
+        height: 500px;
+    }
+    }
+    
+  
 }
 
 // section videos shows

@@ -8,14 +8,14 @@ h1 {
 
 /* section text */
 
-.container-text_groupe{
+.container-text_groupe {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
     // background-color: red;
-    margin-top: 100px;
+    margin-top: 160px;
     height: 200px;
 
     h1 {
@@ -26,17 +26,19 @@ h1 {
 
     p {
         color: #d80303;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
         margin-top: 90px;
     }
 }
 
 /*section group*/
-.text-section h3{
-    color : white;
+.text-section h3 {
+    color: white;
     font-size: 40px;
+
 }
+
 .images-group {
     max-width: 1200px;
     margin-left: auto;
@@ -44,7 +46,7 @@ h1 {
     padding-left: 1rem;
     padding-right: 1rem;
     //   background-color: red;
-    margin-top: 100px;
+    margin-top: 500px;
     height: 2000px;
 
     span {
@@ -52,7 +54,7 @@ h1 {
     }
 
     .star-container {
-         width: 400px;
+        width: 400px;
         height: 400px;
         display: flex;
         align-items: center;
@@ -81,8 +83,9 @@ h1 {
 
 
 }
+
 // section formation
-.text-section_formation{
+.text-section_formation {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -107,7 +110,25 @@ h1 {
     }
 }
 
-.container-video{
+.container_text {
+    h2 {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 150px;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 150px;
+    }
+}
+
+.container-video {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
@@ -115,9 +136,9 @@ h1 {
     padding-right: 1rem;
     margin-top: 150px;
 
-    h3{
+    h3 {
         color: white;
-       font-size: 40px;
+        font-size: 40px;
     }
 }
 
@@ -128,10 +149,10 @@ h1 {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 150px;
-    
-    h3{
+    margin-top: 90px;
+
+    h3 {
         color: white;
-       font-size: 40px;
+        font-size: 40px;
     }
 }

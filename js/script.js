@@ -13,15 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
 /**Ajustement du debut de video en seconds* */
 const video = document.getElementById("bg-video");
 
-// Cuando el video carga su metadata (duración, etc.)
+// charge de video duration
 video.addEventListener("loadedmetadata", () => {
-  video.currentTime = 4.5; // empieza en el segundo 5
+  video.currentTime = 4.5; //le video star en 4.5 secondes
 });
-/***********effect pour les card de  la page music ***********/
+/*  Animación con Framer Motion  */
 
-const cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("flipped");
-  });
-});
+const { animate } = window.framerMotion;
+
+animate("#form", { opacity: [0, 1], y: [-50, 0] }, { duration: 1 });
+animate("#map", { opacity: [0, 1], x: [50, 0] }, { duration: 1, delay: 0.5 });
+animate("#about", { opacity: [0, 1], y: [50, 0] }, { duration: 1, delay: 1 });
+animate(
+  "#services",
+  { opacity: [0, 1], y: [50, 0] },
+  { duration: 1, delay: 1.3 }
+);
+animate("#faq", { opacity: [0, 1], y: [50, 0] }, { duration: 1, delay: 1.6 });

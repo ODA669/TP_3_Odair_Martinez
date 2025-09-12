@@ -63,7 +63,7 @@ margin-top: 110px;
   padding-left: 1rem;
   padding-right: 1rem;
   // background-color: green;
-  margin-top: 200px;
+  margin-top: 100px;
  
   .container-text_icons{
     display: flex;
@@ -85,11 +85,11 @@ margin-top: 110px;
       .text-reseaux,
       .icons-reseaux {
         width: 100%;
-        text-align: center; // opcional, centra el texto
+        text-align: center; 
       }
 
       .icons-reseaux {
-        margin-top: 1rem; // separa los iconos del texto
+        margin-top: 1rem; 
       }
     }
   }
@@ -235,3 +235,4 @@ margin-top: 110px;
 // footer{
 //   margin-top: 200px;
 // }
+
