@@ -2,13 +2,13 @@
 
 /*********gsap animation **************************************/
 
-document.addEventListener("DOMContentLoaded", () => {
-  gsap.fromTo(
-    ".img-logo img",
-    { scale: 0.5, opacity: 3 },
-    { scale: 1, opacity: 1, duration: 10, ease: "elastic.out(0.8, 0.3)" }
-  );
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   gsap.fromTo(
+//     ".img-logo img",
+//     { scale: 0.5, opacity: 3 },
+//     { scale: 1, opacity: 1, duration: 10, ease: "elastic.out(0.8, 0.3)" }
+//   );
+// });
 
 /**Ajustement du debut de video en seconds* */
 const video = document.getElementById("bg-video");

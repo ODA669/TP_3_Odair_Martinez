@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="style/css/sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -26,7 +27,7 @@
         // Register service worker.
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
-                navigator.serviceWorker.register("service-worker.js").then((reg) => {
+                navigator.serviceWorker.register("serviceWorker.js").then((reg) => {
                     console.log("Service worker registered.", reg);
                 });
             });
