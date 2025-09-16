@@ -22,7 +22,7 @@ const FILES_TO_CACHE = [
   "/imgs/group/sorath.jpg",
 ];
 
-// Install - cache all files
+/*Install - cache all files*/
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
   evt.waitUntil(
@@ -39,7 +39,7 @@ self.addEventListener("install", (evt) => {
   self.skipWaiting();
 });
 
-// Activate - delete old caches
+/*Activate - delete old caches*/
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
   evt.waitUntil(
@@ -62,23 +62,21 @@ self.addEventListener("install", (evt) => {
   self.skipWaiting();
 });
 
-// Fetch - serve cached content or offline page
+/*Fetch - serve cached content or offline page*/
 self.addEventListener("fetch", (evt) => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
 
   evt.respondWith(
     caches.match(evt.request).then((cachedResponse) => {
       if (cachedResponse) {
-        return cachedResponse; // Servir desde cache si existe
       }
       return fetch(evt.request)
         .then((response) => {
-          // Opcional: agregar nuevas respuestas al cache dinámico
           return response;
         })
         .catch(() => {
           if (evt.request.mode === "navigate") {
-            return caches.match("/offline.html"); // Página offline solo para navegación
+            return caches.match("offline.html");
           }
         });
     })
