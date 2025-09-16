@@ -2,20 +2,18 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sætaıǝr</title>
-    <link rel="stylesheet" href="style/css/shop_sass.css" />
+    <link rel="stylesheet" href="style/css/shop_sass.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-papZVxFZ8N1fZpYyMZXr+Lf5uSshnv9sD0qql+G2K29R7pFk/s8i+E6VbG2r3vFh2r5KZP9YnS3z1sw2nW7WxQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -24,7 +22,7 @@
         <nav class="border-gray-700 bg-black dark:bg-black dark:border-gray-700">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="imgs/logo/logo.jpg" class="h-20" alt="Saetaier_Logo" />
+                    <img src="imgs/logo/logo.jpg" class="h-20" alt="Saetaier_Logo">
                 </a>
                 <button data-collapse-toggle="navbar-solid-bg" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -68,50 +66,43 @@
     <main>
         <!-- Sección Shop -->
         <section class="py-12 bg-black text-white">
-            <div class="container-shop mx-auto px-4">
+            <div class="container__shop mx-auto px-4">
                 <h2 class="text-2xl font-bold text-center mb-8 text-balance leading-relaxed">
                     Découvrez l’essence de notre groupe dans chaque produit : une musique qui s’habille, qui vibre et
                     qui se partage.
                 </h2>
 
 
-                <div class="grid-produits grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Producto 1 -->
+                <div class="grid__produits grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
                     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                        <img src="imgs/shop/album.jpg" alt="Artículo 1" class="w-full h-64 object-cover mb-4 rounded">
+                        <img src="imgs/shop/album.jpg" alt="Article_1" class="w-full h-64 object-cover mb-4 rounded">
                         <h3 class="text-xl font-semibold mb-2">Album </h3>
                         <button
                             class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
                     </div>
-
-                    <!-- Producto 2 -->
                     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                        <img src="imgs/shop/combo1.jpg" alt="Artículo 2" class="w-full h-64 object-cover mb-4 rounded">
+                        <img src="imgs/shop/combo1.jpg" alt="Artícle_2" class="w-full h-64 object-cover mb-4 rounded">
                         <h3 class="text-xl font-semibold mb-2">Combo</h3>
                         <button
                             class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
                     </div>
-
-                    <!-- Producto 3 -->
                     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                        <img src="imgs/shop/t-shirt-2.jpg" alt="Artículo 3"
+                        <img src="imgs/shop/t-shirt-2.jpg" alt="Artícule_3"
                             class="w-full h-64 object-cover mb-4 rounded">
                         <h3 class="text-xl font-semibold mb-2">T-shirt Basic</h3>
                         <button
                             class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
                     </div>
-
-                    <!-- Producto 4 -->
                     <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                        <img src="imgs/shop/t-shirt.jpg" alt="Artículo 4" class="w-full h-64 object-cover mb-4 rounded">
-                        <h3 class="text-xl font-semibold mb-2">T-shirt two side print</h3>
+                        <img src="imgs/shop/t-shirt.jpg" alt="Artícule_4" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">T-shirt two side </h3>
                         <button
                             class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- section newsletter -->
         <section class="container-newsletter bg-gray-900 text-white py-12 px-4">
@@ -122,9 +113,8 @@
                     mail.
                 </p>
                 <form class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-                    <input type="email" placeholder="Tu correo electrónico"
-                        class="px-4 py-2 rounded-lg w-full sm:w-auto flex-1 text-black border border-red-700" required>
-
+                    <input type="email" placeholder="Mail"
+                        class="px-4 py-2 rounded-lg w-full sm:w-auto flex-1 text-white border border-red-700" required>
                     <button type="submit"
                         class="px-6 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition">
                         Suscribirse
@@ -136,25 +126,24 @@
     <!-- footter section -->
     <footer>
         <div class="max-w-[1250px] mx-auto px-4 py-6 sm:py-10 text-center text-white">
-
-            <!-- Navegación Footer -->
             <nav class="mb-6">
                 <ul class="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm sm:text-base font-medium">
-                    <li><a href="#accueil" class="hover:text-gray-300 transition">Accueil</a></li>
-                    <li><a href="#music" class="hover:text-gray-300 transition">Music</a></li>
-                    <li><a href="#tour" class="hover:text-gray-300 transition">Tour</a></li>
-                    <li><a href="#shop" class="hover:text-gray-300 transition">Shop</a></li>
-                    <li><a href="#contact" class="hover:text-gray-300 transition">Contact</a></li>
+                    <li><a href="index.html" class="hover:text-gray-300 transition">Accueil</a></li>
+                    <li><a href="music.html" class="hover:text-gray-300 transition">Music</a></li>
+                    <li><a href="tour.html" class="hover:text-gray-300 transition">Tour</a></li>
+                    <li><a href="shop.html" class="hover:text-gray-300 transition">Shop</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300 transition">Contact</a></li>
                 </ul>
             </nav>
 
-            <!-- Créditos -->
+            <!-- signature -->
             <div class="space-y-2 text-xs sm:text-sm">
-                <p>&copy; 2025. All rights reserved.</p>
+                <p>&copy; 2025. Tous droits réservés.</p>
                 <p>Conçu par Odair Martinez</p>
             </div>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

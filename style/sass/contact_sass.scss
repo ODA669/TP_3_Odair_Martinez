@@ -4,9 +4,21 @@ body{
 h1{
     color: white;
 }
+/*****section maps************************/
+.maps__form{
+    h2{
+        margin-top: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 70px;
+    }
+    .formMap{
+        margin-top: 150px;
+    }
+}
 
 /***************************formulaire contact*/
-.input-control {
+.input__control {
   padding: 15px;
 
   textarea {
@@ -54,17 +66,5 @@ h1{
   }
 
  
-}
-/*****section maps************************/
-.maps-form{
-    h2{
-        margin-top: 150px;
-        color: white;
-        font-weight: bold;
-        font-size: 70px;
-    }
-    .formMap{
-        margin-top: 150px;
-    }
 }
 

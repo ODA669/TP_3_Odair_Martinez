@@ -7,61 +7,54 @@ h1 {
 }
 
 /* section text */
-.container-text_groupe {
+.container__text-groupe {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-top: 160px;
-  height: 200px;
+  margin: 160px auto 0 auto;
+  padding: 0 1rem;
 }
-.container-text_groupe h1 {
+.container__text-groupe h1 {
   color: white;
   font-size: 70px;
   text-align: center;
+  margin-bottom: 2rem;
 }
-.container-text_groupe p {
+.container__text-groupe p {
   color: #d80303;
   font-size: 30px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 150px;
+}
+@media (max-width: 1024px) {
+  .container__text-groupe p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .container__text-groupe p {
+    font-size: 20px;
+  }
 }
 
 /*section group*/
-.text-section h3 {
+.text__section-formation h3 {
   color: white;
-  font-size: 40px;
+  font-size: 60px;
 }
 
-.images-group {
+.images__group {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 500px;
+  margin-top: 200px;
   height: 2000px;
 }
-.images-group span {
+.images__group span {
   color: #d80303;
 }
-.images-group .star-container {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  box-shadow: 0 0 60px rgb(143, 137, 137);
-}
-.images-group .star-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  clip-path: polygon(50% 100%, 61% 65%, 98% 65%, 68% 43%, 79% 9%, 50% 30%, 21% 9%, 32% 43%, 2% 65%, 39% 65%);
-}
 
+/*section formation*/
 .text-section_formation {
   max-width: 1200px;
   margin-left: auto;
@@ -84,7 +77,16 @@ h1 {
   margin-top: 20px;
 }
 
-.container_text h2 {
+/*section album*/
+.container__album {
+  margin-top: 150px;
+}
+.container__album .img__album img {
+  width: 100%;
+  height: auto;
+}
+
+.container__text h2 {
   color: white;
   font-size: 40px;
   font-weight: bold;
@@ -92,7 +94,7 @@ h1 {
   margin-bottom: 50px;
   margin-top: 150px;
 }
-.container_text p {
+.container__text p {
   color: white;
   font-size: 20px;
   text-align: center;
@@ -100,7 +102,7 @@ h1 {
   margin-top: 150px;
 }
 
-.container-video {
+.container__video {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
@@ -108,13 +110,13 @@ h1 {
   padding-right: 1rem;
   margin-top: 150px;
 }
-.container-video h3 {
+.container__video h3 {
   color: white;
   font-size: 40px;
 }
 
 /*section spotify*/
-.container-spotify {
+.container__spotify {
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
@@ -122,7 +124,7 @@ h1 {
   padding-right: 1rem;
   margin-top: 90px;
 }
-.container-spotify h3 {
+.container__spotify h3 {
   color: white;
   font-size: 40px;
 }

@@ -1,10 +1,5 @@
-@charset "UTF-8";
 body {
   background-color: black !important;
-}
-
-a, button {
-  cursor: url("pentagrama-invertido.png"), pointer;
 }
 
 h1 {
@@ -12,7 +7,7 @@ h1 {
 }
 
 /*section carousel*/
-.container-carousel {
+.container__carousel {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -24,47 +19,48 @@ h1 {
 }
 
 /*section de text et des icons reseaux sociaux*/
-.container-description {
+.container__description {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 100px;
+  /*Media query  500px y 625px*/
 }
-.container-description .container__text-icons {
+.container__description .container__text-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.container-description .container__text-icons .text-reseaux {
+.container__description .container__text-icons .text__reseaux {
   width: 100%;
 }
-.container-description .container__text-icons .icons-reseaux {
+.container__description .container__text-icons .icons__reseaux {
   width: 30%;
 }
 @media (max-width: 625px) and (min-width: 400px) {
-  .container-description .flex-row-md {
+  .container__description .flex-row-md {
     flex-direction: row;
     align-items: flex-start;
-    gap: 1rem; /* igual que md:space-x-4 */
+    gap: 1rem;
   }
-  .container-description .container-text_icons {
+  .container__description .container__text-icons {
     flex-direction: column;
     align-items: center;
   }
-  .container-description .container-text_icons .text-reseaux,
-  .container-description .container-text_icons .icons-reseaux {
+  .container__description .container__text-icons .text__reseaux,
+  .container__description .container__text-icons .icons__reseaux {
     width: 100%;
     text-align: center;
   }
-  .container-description .container-text_icons .icons-reseaux {
+  .container__description .container__text-icons .icons__reseaux {
     margin-top: 1rem;
   }
 }
 
 /* section shows et link */
-.container-shows {
+.container__shows {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
@@ -75,20 +71,20 @@ h1 {
   height: 600px !important;
   margin-top: 200px;
 }
-.container-shows .show-img {
+.container__shows .show__img {
   width: 70% !important;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-shows .show-img img {
+.container__shows .show__img img {
   padding: 10px;
   width: 400px;
   height: 600px;
   object-fit: cover;
 }
-.container-shows .show-info {
+.container__shows .show__info {
   width: 30% !important;
   padding: 20px;
   background-color: #000;
@@ -96,20 +92,19 @@ h1 {
 }
 
 /*section album*/
-.container-album {
+.container__album {
   margin-top: 200px;
 }
-.container-album .img-album img {
+.container__album .img__album img {
   width: 500px;
   height: 600px;
 }
 
+/*section integrants de group*/
 .card {
   background-color: #000307;
-  /* bg-gray-800 */
   color: #ffffff;
   border-radius: 1rem;
-  /* rounded-2xl */
   width: 820px;
   height: 550px;
   display: flex;
@@ -118,11 +113,9 @@ h1 {
   justify-content: center;
   margin-top: 200px;
 }
-
 .card img {
   width: 600px;
   height: auto;
-  /* Bordes translúcidos */
   -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -132,30 +125,24 @@ h1 {
   mask-position: center;
   mask-size: cover;
   object-fit: cover;
-  /* Mantener proporción */
 }
 
 .avatar {
   width: 500px;
   height: 400px;
   border-radius: 0;
-  /* rectangular */
   margin-bottom: 1rem;
   object-fit: cover;
 }
 
 .name {
   font-size: 1.25rem;
-  /* text-xl */
   font-weight: 700;
-  /* font-bold */
 }
 
 .role {
   font-size: 1rem;
-  /* text-base */
   color: #d1d5db;
-  /* text-gray-300 */
 }
 
 @keyframes scroll {
@@ -166,18 +153,17 @@ h1 {
     transform: translateX(-50%);
   }
 }
-.animate-scroll {
+.animate__scroll {
   display: flex;
   width: max-content;
   animation: scroll 20s linear infinite;
 }
 
 /*section newsletter*/
-.container-newsletter {
+.container__newsletter {
   margin-top: 200px;
 }
 
-/*footer*/
 button:hover {
   transform: scale(1.05) rotate(-1deg);
   transition: transform 0.2s;
