@@ -1,14 +1,13 @@
 {
-"orientation": "any", 
+  "orientation": "portrait",
   "name": "Tp_3_odair_martinez",
-  "short_name": "MiWebTP3",
+  "short_name": "Saetaier",
   "description": "TP3 alojada en GitHub Pages",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "black",
-  "theme_color": "black",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "icons": [
-   
     {
       "src": "imgs/icons/apple_android/android-launchericon-48-48.png",
       "sizes": "48x48",
@@ -45,7 +44,6 @@
       "type": "image/png",
       "purpose": "maskable"
     },
-       
     {
       "src": "imgs/icons/face_android/android-launchericon-48-48.png",
       "sizes": "48x48",
@@ -82,8 +80,7 @@
       "type": "image/png",
       "purpose": "maskable"
     },
-
-       {
+    {
       "src": "imgs/icons/insta_android/android-launchericon-48-48.png",
       "sizes": "48x48",
       "type": "image/png",
@@ -119,8 +116,7 @@
       "type": "image/png",
       "purpose": "maskable"
     },
-
-         {
+    {
       "src": "imgs/icons/spot_android/android-launchericon-48-48.png",
       "sizes": "48x48",
       "type": "image/png",
@@ -156,8 +152,7 @@
       "type": "image/png",
       "purpose": "maskable"
     },
-
-            {
+    {
       "src": "imgs/icons/yout_android/android-launchericon-48-48.png",
       "sizes": "48x48",
       "type": "image/png",
@@ -193,6 +188,19 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-
+  ],
+  "screenshots": [
+    {
+      "src": "imgs/screenshots/index.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Pantalla principal de la aplicación"
+    },
+    {
+      "src": "imgs/screenshots/responsive.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Vista del menú de navegación"
+    }
   ]
 }
