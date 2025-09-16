@@ -1,7 +1,4 @@
-// Update cache names any time any of the cached files change.
 const CACHE_NAME = "tp3-cache-v1";
-
-// Add list of files to cache here.
 const FILES_TO_CACHE = [
   "/",
   "/index.html",
@@ -10,59 +7,80 @@ const FILES_TO_CACHE = [
   "/shop.html",
   "/contact.html",
   "/offline.html",
-  "/sass.sass",
-  "/music_sass.sass",
-  "/tour_sass.sass",
-  "/shop_sass.sass",
-  "/contact_sass.sass",
+  "/sass.css",
+  "/music_sass.css",
+  "/tour_sass.css",
+  "/shop_sass.css",
+  "/contact_sass.css",
   "/script.js",
+  "/validation.js",
   "/imgs/icons/apple_android/android-launchericon-192-192.png",
+  "/imgs/group/endead.jpg",
+  "/imgs/group/sanguinem.jpg",
+  "/imgs/group/morkar.jpg",
+  "/imgs/group/labelua.jpg",
+  "/imgs/group/sorath.jpg",
 ];
 
-// Install event - precache static resources
+// Install - cache all files
+self.addEventListener("install", (evt) => {
+  console.log("[ServiceWorker] Install");
+  evt.waitUntil(
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => {
+        console.log("[ServiceWorker] Pre-caching files");
+        return cache.addAll(FILES_TO_CACHE);
+      })
+      .catch((err) => {
+        console.error("[ServiceWorker] Failed to cache files:", err);
+      })
+  );
+  self.skipWaiting();
+});
+
+// Activate - delete old caches
 self.addEventListener("install", (evt) => {
   console.log("[ServiceWorker] Install");
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("[ServiceWorker] Pre-caching offline page ");
-      return cache.addAll(FILES_TO_CACHE);
+      return Promise.allSettled(
+        FILES_TO_CACHE.map((file) => cache.add(file))
+      ).then((results) => {
+        results.forEach((r, i) => {
+          if (r.status === "rejected") {
+            console.warn(
+              "[ServiceWorker] Failed to cache:",
+              FILES_TO_CACHE[i],
+              r.reason
+            );
+          }
+        });
+      });
     })
   );
   self.skipWaiting();
 });
 
-// Activate event - clean up old caches
-self.addEventListener("activate", (evt) => {
-  console.log("[ServiceWorker] Activate");
-  evt.waitUntil(
-    caches.keys().then((keyList) => {
-      return Promise.all(
-        keyList.map((key) => {
-          if (key !== CACHE_NAME) {
-            console.log("[ServiceWorker] Removing old cache:", key);
-            return caches.delete(key);
-          }
-        })
-      );
-    })
-  );
-  self.clients.claim();
-});
-
-// Fetch event - serve cached content or offline.html
+// Fetch - serve cached content or offline page
 self.addEventListener("fetch", (evt) => {
   console.log("[ServiceWorker] Fetch", evt.request.url);
 
-  // Only handle page navigation requests
-  if (evt.request.mode !== "navigate") {
-    return;
-  }
-
   evt.respondWith(
-    fetch(evt.request).catch(() => {
-      return caches.open(CACHE_NAME).then((cache) => {
-        return cache.match("/offline.html");
-      });
+    caches.match(evt.request).then((cachedResponse) => {
+      if (cachedResponse) {
+        return cachedResponse; // Servir desde cache si existe
+      }
+      return fetch(evt.request)
+        .then((response) => {
+          // Opcional: agregar nuevas respuestas al cache dinámico
+          return response;
+        })
+        .catch(() => {
+          if (evt.request.mode === "navigate") {
+            return caches.match("/offline.html"); // Página offline solo para navegación
+          }
+        });
     })
   );
 });
