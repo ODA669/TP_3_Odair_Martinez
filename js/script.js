@@ -1,7 +1,7 @@
 /**section index video */
 document.addEventListener("DOMContentLoaded", () => {
   gsap.fromTo(
-    ".img-logo img",
+    ".bg-video",
     { scale: 0.5, opacity: 3 },
     { scale: 1, opacity: 1, duration: 10, ease: "elastic.out(0.8, 0.3)" }
   );
