@@ -18,7 +18,6 @@ video.addEventListener("loadedmetadata", () => {
   video.currentTime = 4.5; //le video star en 4.5 secondes
 });
 
-// Animaciones con GSAP
 gsap.from("#form", { opacity: 0, y: -50, duration: 1 });
 gsap.from("#map", { opacity: 0, x: 50, duration: 1, delay: 0.5 });
 gsap.from("#about", { opacity: 0, y: 50, duration: 1, delay: 1 });

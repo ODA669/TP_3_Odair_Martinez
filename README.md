@@ -13,3 +13,4 @@ https://medium.com/@mintpw/how-to-create-infinite-horizontal-scroll-and-hover-pa
 
 animation video index
 https://motion.dev/
+https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js
