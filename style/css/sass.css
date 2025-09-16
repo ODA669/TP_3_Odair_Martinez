@@ -3,11 +3,14 @@ body {
   background-color: black !important;
 }
 
+a, button {
+  cursor: url("pentagrama-invertido.png"), pointer;
+}
+
 h1 {
   color: white;
 }
 
-/*section img logo*/
 /*section carousel*/
 .container-carousel {
   max-width: 1200px;

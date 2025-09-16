@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Sætaıǝr</title>
-    <link rel="icon" type="image/png" href="imgs/icons/pentagram.png" />
     <link rel="stylesheet" href="style/css/shop_sass.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-papZVxFZ8N1fZpYyMZXr+Lf5uSshnv9sD0qql+G2K29R7pFk/s8i+E6VbG2r3vFh2r5KZP9YnS3z1sw2nW7WxQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 
 <body>
@@ -21,8 +24,7 @@
         <nav class="border-gray-700 bg-black dark:bg-black dark:border-gray-700">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="imgs/logo/logo.jpg" class="h-20" alt="Flowbite Logo" />
-                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Metal</span> -->
+                    <img src="imgs/logo/logo.jpg" class="h-20" alt="Saetaier_Logo" />
                 </a>
                 <button data-collapse-toggle="navbar-solid-bg" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -67,50 +69,46 @@
         <!-- Sección Shop -->
         <section class="py-12 bg-black text-white">
             <div class="container-shop mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Shop</h2>
-                <h3>Découvrez l’essence de notre groupe dans chaque produit : une musique qui s’habille, qui vibre et
-                    qui se partage.</h2>
-                    <div class="grid-produits grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Producto 1 -->
-                        <div
-                            class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                            <img src="imgs/shop/album.jpg" alt="Artículo 1"
-                                class="w-full h-64 object-cover mb-4 rounded">
-                            <h3 class="text-xl font-semibold mb-2">Album </h3>
-                            <button
-                                class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
-                        </div>
+                <h2 class="text-2xl font-bold text-center mb-8 text-balance leading-relaxed">
+                    Découvrez l’essence de notre groupe dans chaque produit : une musique qui s’habille, qui vibre et
+                    qui se partage.
+                </h2>
 
-                        <!-- Producto 2 -->
-                        <div
-                            class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                            <img src="imgs/shop/combo1.jpg" alt="Artículo 2"
-                                class="w-full h-64 object-cover mb-4 rounded">
-                            <h3 class="text-xl font-semibold mb-2">Combo</h3>
-                            <button
-                                class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
-                        </div>
 
-                        <!-- Producto 3 -->
-                        <div
-                            class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                            <img src="imgs/shop/t-shirt-2.jpg" alt="Artículo 3"
-                                class="w-full h-64 object-cover mb-4 rounded">
-                            <h3 class="text-xl font-semibold mb-2">T-shirt Basic</h3>
-                            <button
-                                class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
-                        </div>
-
-                        <!-- Producto 4 -->
-                        <div
-                            class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
-                            <img src="imgs/shop/t-shirt.jpg" alt="Artículo 4"
-                                class="w-full h-64 object-cover mb-4 rounded">
-                            <h3 class="text-xl font-semibold mb-2">T-shirt two side print</h3>
-                            <button
-                                class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
-                        </div>
+                <div class="grid-produits grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/album.jpg" alt="Artículo 1" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Album </h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
                     </div>
+
+                    <!-- Producto 2 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/combo1.jpg" alt="Artículo 2" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Combo</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/t-shirt-2.jpg" alt="Artículo 3"
+                            class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">T-shirt Basic</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4 w-full">
+                        <img src="imgs/shop/t-shirt.jpg" alt="Artículo 4" class="w-full h-64 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">T-shirt two side print</h3>
+                        <button
+                            class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">Acheter</button>
+                    </div>
+                </div>
             </div>
         </section>
 
