@@ -187,18 +187,7 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },
-    {
-       "src": "imgs/screenshot/index.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-    },
-    {
-      "src": "imgs/screenshot/responsive.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
+    }    
   ],
   "screenshots": [
     {
