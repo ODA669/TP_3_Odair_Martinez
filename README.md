@@ -1,4 +1,6 @@
-# TP_3_Odair_Martinez Gorupe musical saetaier
+![logo](https://github.com/user-attachments/assets/f4193f98-ee16-491b-9f7a-ed98a400fe15)
+
+# TP_3_Odair_Martinez
 
 Travail final
 
