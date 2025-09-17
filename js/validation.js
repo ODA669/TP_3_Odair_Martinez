@@ -78,15 +78,13 @@ const validateForm = () => {
 };
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault(); // Previene el envío por defecto
+  e.preventDefault();
 
   if (validateForm()) {
-    alert("Envío exitoso!"); // Mensaje de éxito
-
-    // Opcional: reiniciar formulario y recargar página
-    form.reset(); // limpia los campos
+    alert("Envío exitoso!");
+    form.reset();
     setTimeout(() => {
-      window.location.reload(); // recarga la página
-    }, 100); // espera 100ms para que el alert se muestre
+      window.location.reload();
+    }, 100);
   }
 });

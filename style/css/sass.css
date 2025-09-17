@@ -26,7 +26,6 @@ h1 {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 100px;
-  /*Media query  500px y 625px*/
 }
 .container__description .container__text-icons {
   display: flex;
@@ -116,7 +115,11 @@ h1 {
 .card img {
   width: 600px;
   height: auto;
-  -webkit-mask-image: radial-gradient(circle, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgb(0, 0, 0) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: cover;

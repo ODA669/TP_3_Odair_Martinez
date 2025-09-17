@@ -194,13 +194,13 @@
       "src": "imgs/screenshot/index.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "label": "Pantalla principal de la aplicación web"
+      "label": "Pantalla principal de l'aplicación web"
     },
     {
       "src": "imgs/screenshot/responsive.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "label": "Pantalla principal de la aplicación responsive"
+      "label": "Pantalla principal de l'aplicación responsive"
     }
   ]
 }
