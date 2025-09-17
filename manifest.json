@@ -191,13 +191,13 @@
   ],
   "screenshots": [
     {
-      "src": "imgs/screenshots/index.png",
+      "src": "imgs/screenshot/index.png",
       "sizes": "1280x720",
       "type": "image/png",
       "label": "Pantalla principal de la aplicación"
     },
     {
-      "src": "imgs/screenshots/responsive.png",
+      "src": "imgs/screenshot/responsive.png",
       "sizes": "1280x720",
       "type": "image/png",
       "label": "Vista del menú de navegación"
